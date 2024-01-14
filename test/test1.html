@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2013/07/12/15/53/sports-150518_960_720.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        div {
+            width: 300px;
+            border-width: 5px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        form {
+            color:black;
+            font-weight: bolder;
+            font-size:large;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>LOGIN</h1>
+        <form name="myform" onsubmit="return password()" action="sports.html">
+            <label for="firstname">FIRST NAME</label>
+            <input type="text" id="fname" placeholder="enter your name" required>
+            <br>
+            <br>
+            <label for="lastname">LAST NAME</label>
+            <input type="text" id="lname" placeholder="enter surname" required> <br>
+            <br>
+            <label for="gender">FEMALE</label>
+            <input type="radio" name="gender" value="abc">
+            <label for='gender'>MALE</label>
+            <input type="radio" name="gender" value="abc">
+            <br><br>
+            <label for="password">ENTER PASSWORD</label>
+            <input type="password" id="pass1" onclick="pass1()" required>
+            <br><br>
+            <label for="password">CONFIRM PASSWORD</label>
+            <input type="password" id="pass2" onclick="pass1()" required>
+            <br><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

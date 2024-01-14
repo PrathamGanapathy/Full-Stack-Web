@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: darkslategrey;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        h1 {
+            color: whitesmoke;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+
+        h2 {
+            color: whitesmoke;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+
+        .complete-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+
+        .complete-button:hover {
+            background-color: #45a049;
+        }
+
+
+        .note {
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1> <b>THE FOOTBALL BODY WORKOUT</b> </h1>
+    <h2>Day 1: Legs, Back, Abs</h2>
+    <table>
+        <tr>
+            <th>Exercise</th>
+            <th>Equipment</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>REST</th>
+        </tr>
+        <tr>
+            <td>BOX SQUAT</td>
+            <td>Dumbbells</td>
+            <td>5</td>
+            <td>3</td>
+            <td>As needed</td>
+            <td><button class="complete-button" onclick="markComplete('day1_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>BULGARIAN SPLIT SQUAT</td>
+            <td>Dumbbells</td>
+            <td>3</td>
+            <td>8 each leg</td>
+            <td>180 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day1_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>WEIGHTED BACK EXTENSION</td>
+            <td>Bench</td>
+            <td>4</td>
+            <td>12</td>
+            <td>0 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day1_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>DUMBBELL SIDE BEND</td>
+            <td>Dumbbells</td>
+            <td>4</td>
+            <td>12 each side</td>
+            <td>90 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day1_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>SPRINTER SITUP</td>
+            <td>No equipment</td>
+            <td>5</td>
+            <td>3</td>
+            <td>As needed</td>
+            <td><button class="complete-button" onclick="markComplete('day1_exercise1')">Complete</button></td>
+        </tr>
+    </table>
+
+
+    <h2>Day 2: Chest,Arms,back,shoulders</h2>
+    <table>
+        <tr>
+            <th>Exercise</th>
+            <th>Equipment</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>REST</th>
+        </tr>
+        <tr>
+            <td>BENCH PRESS</td>
+            <td>Barbell</td>
+            <td>5</td>
+            <td>3</td>
+            <td>As needed</td>
+            <td><button class="complete-button" onclick="markComplete('day2_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>NEUTRAL-GRIP FLOOR PRESS</td>
+            <td>Dumbbells</td>
+            <td>3</td>
+            <td>8,8,6,5</td>
+            <td>180 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day2_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>DUMBBELL ROW</td>
+            <td>Dumbbells</td>
+            <td>2</td>
+            <td>8,20-25</td>
+            <td>120 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day2_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>SEATED DUMBBELL LATERAL RAISE</td>
+            <td>Dumbbells</td>
+            <td>3</td>
+            <td>10</td>
+            <td>0 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day2_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>SEATED DUMBBELL CLEAN</td>
+            <td>Dumbbells</td>
+            <td>3</td>
+            <td>10</td>
+            <td>90 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day2_exercise1')">Complete</button></td>
+        </tr>
+    </table>
+    <h2>Day 3:Legs,back,shoulders,abs</h2>
+    <table>
+        <tr>
+            <th>Exercise</th>
+            <th>Equipment</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>REST</th>
+        </tr>
+        <tr>
+            <td>HIGH BOX JUMP</td>
+            <td>BOX</td>
+            <td>8</td>
+            <td>2</td>
+            <td>45 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day3_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>REVERSE LUNGE</td>
+            <td>Dumbbells</td>
+            <td>3</td>
+            <td>10 each leg</td>
+            <td>180 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day3_exercise1')">Complete</button></td>
+        <tr>
+            <td colspan="5"><b>PS:Perform with barbell.Add knee lift to end of move</b></td>
+        </tr>
+        </tr>
+        <tr>
+            <td>DUMBBELL ONE ARM SWING</td>
+            <td>Dumbbells</td>
+            <td>3</td>
+            <td>15(Ecah Arm)</td>
+            <td>90 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day3_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>PLANK</td>
+            <td>No equipment</td>
+            <td>3</td>
+            <td>Hold for 30 sec</td>
+            <td>0 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day3_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>WEIGHTED SITUP</td>
+            <td>Weight plates</td>
+            <td>3</td>
+            <td>15</td>
+            <td>30 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day3_exercise1')">Complete</button></td>
+        </tr>
+    </table>
+    <h2>Day 4:Arms,shoulders,traps</h2>
+    <table>
+        <tr>
+            <th>Exercise</th>
+            <th>Equipment</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>REST</th>
+        </tr>
+        <tr>
+            <td>PLYO PUSHUP</td>
+            <td>No equipment</td>
+            <td>8</td>
+            <td>5</td>
+            <td>45 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day4_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>CHIN UP</td>
+            <td>Pullup Bar</td>
+            <td>3</td>
+            <td>30 sec armrap</td>
+            <td>120 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day4_exercise1')">Complete</button></td>
+
+        </tr>
+        <tr>
+            <td>SHRUG</td>
+            <td>Dumbbells</td>
+            <td>3</td>
+            <td>30 sec armrap</td>
+            <td>120 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day4_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td colspan="5"><b>PS:Use Dumbbells</b></td>
+        </tr>
+        <tr>
+            <td>HAMMER CURL</td>
+            <td>DUMBELLS</td>
+            <td>3</td>
+            <td>30 sec armwrap</td>
+            <td>120 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day4_exercise1')">Complete</button></td>
+        </tr>
+        <tr>
+            <td>TRICEPS PUSHDOWN/td>
+            <td>Elastic Band</td>
+            <td>3</td>
+            <td>20</td>
+            <td>60 sec</td>
+            <td><button class="complete-button" onclick="markComplete('day4_exercise1')">Complete</button></td>
+        </tr>
+    </table>
+    <script>
+        function markComplete(exerciseId) {
+            alert('Marked as complete: ' + exerciseId);
+
+        }
+    </script>
+</body>
+</html>

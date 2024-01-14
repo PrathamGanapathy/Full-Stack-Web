@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Bar with Buttons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 300px;
+    }
+
+    .slider {
+      width: 100%;
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .button {
+      width: 20px;
+      height: 20px;
+      background-color: #3498db;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider" id="slider"></div>
+  <div class="button" id="button"></div>
+</div>
+
+<script>
+  // Get the slider and button elements
+  const slider = document.getElementById('slider');
+  const button = document.getElementById('button');
+
+  // Add event listener for button drag
+  button.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+
+    // Calculate the initial mouse position
+    const startX = e.clientX;
+
+    // Calculate the initial button position
+    const startLeft = button.offsetLeft;
+
+    // Add event listeners for mousemove and mouseup events
+    document.addEventListener('mousemove', moveButton);
+    document.addEventListener('mouseup', () => {
+      document.removeEventListener('mousemove', moveButton);
+    });
+
+    // Function to handle button movement
+    function moveButton(e) {
+      // Calculate the new button position based on mouse movement
+      const newX = startLeft + e.clientX - startX;
+
+      // Ensure the button stays within the slider boundaries
+      const maxX = slider.offsetWidth - button.offsetWidth;
+      const newLeft = Math.min(Math.max(0, newX), maxX);
+
+      // Update the button position
+      button.style.left = newLeft + 'px';
+    }
+  });
+</script>
+
+</body>
+</html>
