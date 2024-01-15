@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    h1{
+        color:#3498db;
+        text-align: center;
+    }
+    body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #141116;
+    }
+    button{
+        background-color: #3498db;
+        color: white;
+        font-size: 50px;
+        width: 300px;
+        height: 350px;
+    }
+    .container {
+        border: 1px solid #2c3e50;
+        background-color:#2c3e50 ;
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Center items vertically */
+    }
+
+    .image {
+      width: 500px; /* Set the width of the image as needed */
+      height: auto; /* Maintain aspect ratio */
+      padding-left: 20px;
+    }
+
+    .content_left {
+      padding-left: 20px; /* Adjust padding as needed */
+    }
+  </style>
+  <title>Home</title>
+</head>
+<body>
+<h1>SPORTS</h1>
+<div class="container">
+  <img src="Homepage\Images\basketball2.jpg" alt="Basketball" class="image">
+  <div class="content_left">
+    <button onclick="Routine('Basketball')">Routine</button>
+    <button>Shop</button>
+    <button>Statistics</button>
+  </div>
+</div>
+
+<div class="container">
+    <img src="Homepage\Images\football2.jpg" alt="Football" class="image">
+    <div class="content_left">
+      <button onclick="Routine('Football')">Routine</button>
+      <button>Shop</button>
+      <button>Statistics</button>
+    </div>
+  </div>
+
+  <script>
+    function Routine(sport){
+      if(sport=="Football"){
+      window.location.href='routine_test2.html';
+      }
+    }
+  </script>
+</body>
+</html>

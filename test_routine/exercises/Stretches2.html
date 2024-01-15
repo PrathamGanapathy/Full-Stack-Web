@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stretches</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Stretches</h1>
+    <p style="color: white;"><small>You can click on the exercise name to see how to do it</small></p>
+    <table>
+        <tr>
+            <th>Exercise</th>
+            <th>Equipment</th>
+            <th>Time/Reps</th>
+            <th>Sets</th>
+            <th>REST</th>
+            <th></th>
+        </tr>
+        <tr id="1">
+            <td><a id="Neck" href="Neck.html">Neck Stretches</a></td>
+            <td>None</td>
+            <td>15-30sec per side</td>
+            <td>1</td>
+            <td>None</td>
+            <td><button id="Complete" onclick="Completed(1)" value="NC">Complete</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Sholder Rolls</td>
+            <td>None</td>
+            <td>15-30sec Forward and Backward</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+    <script>
+        function Completed(id){
+            var value=document.getElementById('Complete')
+            if(value.value=='NC'){
+                value.value='C';
+                document.getElementById('Complete').innerHTML="Completed";
+                document.getElementById(`${id}`).classList.add('highlight');
+            }
+        }
+    </script>
+</body>
+</html>

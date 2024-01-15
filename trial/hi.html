@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link <ul> to Alert</title>
+  <style>
+    /* Optional styling for better visibility */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    ul {
+      cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+      color: blue; /* Change text color to indicate it's a link */
+      text-decoration: underline; /* Underline to indicate it's a link */
+    }
+  </style>
+</head>
+<body>
+
+<ul id="myList">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<script>
+  // Attach an event listener to the <ul> element
+  document.getElementById('myList').addEventListener('click', function() {
+    // Display an alert box when the <ul> is clicked
+    alert('Unordered List Clicked!');
+  });
+</script>
+
+</body>
+</html>

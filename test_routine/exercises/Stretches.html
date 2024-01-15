@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stretches</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Stretches</h1>
+    <p style="color: white;"><small>You can click on the exercise name to see how to do it</small></p>
+    <!-- <button onclick="Back()">Back</button> -->
+    <table>
+        <tr>
+            <th>Exercise</th>
+            <th>Equipment</th>
+            <th>Time/Reps</th>
+            <th>Sets</th>
+            <th>REST</th>
+            <th></th>
+        </tr>
+        <tr id="1">
+            <td><a href="Neck.html">Neck Stretches</a></td>
+            <td>None</td>
+            <td>15-30sec per side</td>
+            <td>1</td>
+            <td>None</td>
+            <td><button id="Complete" onclick="Completed(1)" value="NC">Complete</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Sholder Rolls</td>
+            <td>None</td>
+            <td>15-30sec Forward and Backward</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Arm Circles</td>
+            <td>None</td>
+            <td>15-30sec per direction</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Triceps Stretch</td>
+            <td>None</td>
+            <td>15-30sec per hand</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Wrist Stretches</td>
+            <td>None</td>
+            <td>15-30sec per hand</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Chest Opener</td>
+            <td>None</td>
+            <td>15-30sec</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Cat-Cow Stretch</td>
+            <td>None</td>
+            <td>30sec</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Hip Flexor Stretch</td>
+            <td>None</td>
+            <td>15-30sec per side</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Quadriceps Stretch</td>
+            <td>None</td>
+            <td>15-30sec per leg</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Calf Stretch</td>
+            <td>None</td>
+            <td>15-30sec per leg</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Ankel Rolls</td>
+            <td>None</td>
+            <td>15sec per direction</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+        <tr>
+            <td></td>
+            <td>Dynamic Leg Swings</td>
+            <td>None</td>
+            <td>10-15 Swings per leg</td>
+            <td>1</td>
+            <td>None</td>  
+        </tr>
+    </table>
+
+    <script>
+        function Completed(id){
+            var value=document.getElementById('Complete')
+            if(value.value=='NC'){
+                value.value='C';
+                document.getElementById('Complete').innerHTML="Completed";
+                document.getElementById(`${id}`).classList.add('highlight');
+            }
+        }
+        function Back(){
+            window.location.href='Routine_test4.html';
+        }
+    </script>
+</body>
+</html>

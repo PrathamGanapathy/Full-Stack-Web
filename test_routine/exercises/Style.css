@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    color:#3498db;
+}
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #34495e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+}
+td {
+    color: white;
+    border: 1px solid #2c3e50;
+    padding: 12px;
+    font-weight: bold;
+}
+th {
+    color: white;
+    background-color: #3498db;
+}
+.highlight{
+    background-color: black;
+}
+button{
+    color: white;
+    background-color: #34495e;
+    width:max-content;
+    height: max-content;
+    font-weight: bold;
+}
+/*To remove the higlight from the a tag*/
+a {
+    color: inherit;
+    text-decoration: none;
+  }
