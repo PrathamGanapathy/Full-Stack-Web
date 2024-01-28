@@ -111,5 +111,5 @@ function Completed12(){
 
 //Back button to go back to Routines page
 function Back(){
-    window.location.href='Routine_Basketball.html';
+    window.location.href='../Routine_Basketball.html';
 }

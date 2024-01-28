@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Alert Box</title>
+  <style>
+    /* Style for the modal overlay */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Style for the modal content */
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Modal overlay -->
+<div class="modal-overlay" id="customModal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p>This is a styled alert box.</p>
+    <button onclick="closeModal()">OK</button>
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    // Show the modal
+    document.getElementById('customModal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    // Hide the modal
+    document.getElementById('customModal').style.display = 'none';
+  }
+</script>
+
+<button onclick="openModal()">Show Styled Alert Box</button>
+
+</body>
+</html>

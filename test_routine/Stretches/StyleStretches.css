@@ -5,8 +5,10 @@ body{
 h1{
     text-align: center;
     color:#3498db;
+    margin: 0;
 }
 table {
+    margin: 0;
     text-align: center;
     width: 100%;
     border-collapse: collapse;
@@ -25,9 +27,13 @@ th {
     color: white;
     background-color: #3498db;
 }
+
+/*To highlight completed workout*/
 .highlight{
     background-color: black;
 }
+
+/*Back button*/
 button{
     color: white;
     background-color: #34495e;
@@ -40,3 +46,10 @@ a {
     color: inherit;
     text-decoration: none;
   }
+
+/*Buttons for checking workout*/
+button.work{
+    width: auto;
+    height: auto;
+    color: white;
+}

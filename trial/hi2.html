@@ -12,8 +12,14 @@
     // Sample ordered list data
     var olData = ['Item 1', 'Item 2', 'Item 3'];
 
+    // Build the ordered list string
+    var olString = 'Ordered List:\n\n';
+    for (var i = 0; i < olData.length; i++) {
+      olString += (i + 1) + '. ' + olData[i] + '\n';
+    }
+
     // Display the ordered list in an alert
-    alert('Ordered List:\n\n1. ' + olData[0] + '\n2. ' + olData[1] + '\n3. ' + olData[2]);
+    alert(olString);
   }
 </script>
 

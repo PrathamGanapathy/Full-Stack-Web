@@ -93,5 +93,121 @@ function Completed10(){
 
 //Back button to go back to Routines page
 function Back(){
-    window.location.href='Routine_Basketball.html';
+    window.location.href='../Routine_Basketball.html';
+}
+
+
+
+var i;
+/*Workout lists*/
+
+/*Running and sprinting*/
+function RS(){
+    //Enter the instructions in the below array
+    var olData = ['Interval Running: Incorporate interval running into your training routine. Sprint for 30 seconds, followed by a 1-minute jog or walk. Repeat for 15-20 minutes.',
+    'Suicides: Run to various points on the court, touching the floor at each spot, and then return. Increase speed as you become more conditioned.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*Jump Rope*/
+function JP(){
+    //Enter the instructions in the below array
+    var olData = ['Jumping rope is an excellent cardiovascular exercise that also improves footwork, coordination, and agility. Mix in different techniques like double-unders and crossovers.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*Agility Drills */
+function AD(){
+    //Enter the instructions in the below array
+    var olData = ['Set up cone drills or ladder drills to improve agility and quick lateral movements. Work on shuffles, side steps, and rapid changes of direction.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*Basketball Drills*/
+function BD(){
+    //Enter the instructions in the below array
+    var olData = ['Incorporate basketball-specific drills that involve continuous movement, such as dribbling drills, fast breaks, and full-court sprints.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*HIIT*/
+function HIIT(){
+    //Enter the instructions in the below array
+    var olData = ['Combine exercises like burpees, squat jumps, and mountain climbers in a high-intensity circuit. Perform each exercise for 30-60 seconds with short rest intervals.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*Cycling*/
+function Cy(){
+    //Enter the instructions in the below array
+    var olData = ['Stationary cycling or outdoor biking is an effective low-impact cardiovascular exercise. It helps build stamina without putting excessive strain on joints.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*Stair Climbing*/
+function SC(){
+    //Enter the instructions in the below array
+    var olData = ['Use stairs for an intense cardiovascular workout. Run or walk up and down stairs, focusing on explosive movements and maintaining a quick pace.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*Rowing*/
+function Ro(){
+    //Enter the instructions in the below array
+    var olData = ['Incorporate rowing exercises to engage multiple muscle groups and improve cardiovascular fitness. It\'s a low-impact option that provides a great workout.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*Circuit Training*/
+function CT(){
+    //Enter the instructions in the below array
+    var olData = ['Design a circuit with various exercises, such as jumping jacks, burpees, and box jumps. Move from one exercise to the next with minimal rest.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
+}
+
+/*Cone or Shuttle drill*/
+function CS(){
+    //Enter the instructions in the below array
+    var olData = ['Set up cones or markers to simulate defensive movements or offensive plays. Perform these drills with speed and precision.'];
+    var string="";
+    for(i=0;i<olData.length;i++){
+        string += olData[i] + '\n\n';
+    }
+    alert(string);
 }

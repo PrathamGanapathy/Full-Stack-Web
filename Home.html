@@ -1,19 +1,178 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
-    <title>Home</title>
-    <style>
-        h1{text-align: center;}
-    </style>
+   <title>sports.com</title>
+   <style>
+       body {
+           background-color: black;
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: Arial, sans-serif;
+       }
+
+
+       .video-container {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 20px;
+       }
+
+
+       .video-preview {
+           width: 80%;
+           max-width: 800px;
+           height: 50vh;
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           position: relative;
+           overflow: hidden;
+       }
+
+
+       .thumbnail {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           object-position: center;
+       }
+
+
+       .button-link {
+           position: absolute;
+           bottom: 5%;
+           width: 100%;
+           text-align: center;
+       }
+
+
+       .styled-button {
+           padding: 10px 20px;
+           background-color: #082b42;
+           color: #ffffff;
+           border: none;
+           border-radius: 5px;
+           font-size: 16px;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+           text-decoration: none;
+       }
+
+
+       .styled-button:hover {
+           background-color: #b93a29;
+       }
+
+
+       .video-info {
+           text-align: center;
+           max-width: 800px;
+           margin: auto;
+       }
+
+
+       .video-title {
+           color: #082b42;
+           font-size: large;
+           font-weight: bold;
+           margin: 8px;
+           margin-bottom: 10px;
+       }
+
+
+       .video-subtitle {
+           color: #555;
+           font-size: medium;
+       }
+
+
+       .video-author {
+           color: rgb(90, 90, 90);
+       }
+       h1{
+           text-align: center;
+           color: cornsilk;
+       }
+   </style>
 </head>
+
+
 <body>
-    <h1>Sports Planner</h1>
-    <p>Choose sport for which you want the routine for:</p>
-    <ul>
-        <li><a href="Basketball.html">Basketball</a></li>
-        <li><a href="Football.html">Football</a></li>
-        <li><a href="Cricket.html">Cricket</a></li>
-    </ul>
-    <br>
+   <h1>SPORTS MANAGEMENT WEBSITE</h1>
+   <div class="video-container">
+       <div class="video-preview">
+           <img class="thumbnail"
+               src="https://c4.wallpaperflare.com/wallpaper/442/195/630/lebron-james-nba-basketball-hoop-wallpaper-preview.jpg">
+           <div class="button-link">
+               <a class="styled-button" href="test_routine/Routine_Basketball.html" target="_blank"><b>Click here for more info</b></a>
+           </div>
+       </div>
+       <div class="video-info">
+           <p class="video-title"><a
+                   href="https://www.youtube.com/watch?v=q2_aphWUhJo&pp=ygUUaW50cm8gdG8gYmFza2V0YmFsbCA%3D">INTRO
+                   TO BASKETBALL
+               </a></p>
+           <p class="video-subtitle">Get started with the basics of basketball.</p>
+           <p class="video-author">by Sports Enthusiast</p>
+       </div>
+
+
+       <div class="video-preview">
+           <img class="thumbnail"
+               src="https://t4.ftcdn.net/jpg/01/69/92/21/360_F_169922170_vO6ROZXeX0jbzdnG5AIXuBu4EiMQgP7S.jpg">
+           <div class="button-link">
+               <a class="styled-button" href="checkbox.html" target="_blank"><b>Click here for more info</b></a>
+           </div>
+       </div>
+       <div class="video-info">
+           <p class="video-title"><a
+                   href="https://www.youtube.com/watch?v=VwII4y5vpyU&pp=ygUQaW50cm8gdG8gY3JpY2tldA%3D%3D">INTRO
+                   TO CRICKET
+               </a></p>
+           <p class="video-subtitle">Learn the fundamentals of cricket.</p>
+           <p class="video-author">by Sports Enthusiast</p>
+       </div>
+
+
+       <div class="video-preview">
+           <img class="thumbnail"
+               src="https://media.istockphoto.com/id/1403237406/photo/two-american-football-players-in-action-motion-sportsmen-fight-for-ball-during-game-at.webp?b=1&s=170667a&w=0&k=20&c=O-1ZsumvBG3frA4a6ieKJ_7cG_OSonam-N_EJrdGlxE=">
+           <div class="button-link">
+               <a class="styled-button" href="checkbox.html" target="_blank"><b>Click here for more info</b></a>
+           </div>
+       </div>
+       <div class="video-info">
+           <p class="video-title"><a
+                   href="https://www.youtube.com/watch?v=3t6hM5tRlfA&pp=ygURaW50cm8gdG8gZm9vdGJhbGw%3D">INTRO
+                   TO FOOTBALL
+               </a></p>
+           <p class="video-subtitle">Discover the excitement of football.</p>
+           <p class="video-author">by Sports Enthusiast</p>
+       </div>
+
+
+       <div class="video-preview">
+           <img class="thumbnail"
+               src=https://img.freepik.com/premium-photo/professional-tennis-player-stadium-mixed-media_641298-6850.jpg>
+           <div class="button-link">
+               <a class="styled-button" href="checkbox.html" target="_blank"><b>Click here for more info</b></a>
+           </div>
+       </div>
+       <div class="video-info">
+           <p class="video-title"><a
+                   href="https://www.youtube.com/watch?v=_0QTpylu1aE&pp=ygUPaW50cm8gdG8gdGVubmlz">INTRO
+                   TO TENNIS
+               </a></p>
+           <p class="video-subtitle">Explore the world of tennis.</p>
+           <p class="video-author">by Sports Enthusiast</p>
+       </div>
+   </div>
 </body>
+
+
 </html>
+

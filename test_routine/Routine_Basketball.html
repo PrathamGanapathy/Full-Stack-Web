@@ -31,23 +31,33 @@
             color: inherit;
             text-decoration: none;
         }
+        button.back{
+            color: white;
+            background-color: #34495e;
+            width:max-content;
+            height: max-content;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
     <h1>Routine</h1>
     <div class="center">
-        <button><a href="Stretches\Stretches.html"><b>GENERAL<br>STRETCHING</b></a></button>
-        <button><a href="Cardio\Cardio.html"><b>CARDIOVASCULAR<br>CONDITIONING</b></a></button>
-        <button><b>STRENGTH<br>TRAINING</b></button>
-        <button><b>AGILITY AND<br>SPEED TRAINING</b></button>
-        <button><b>EXPLOSIVE<br>POWER TRAINING</b></button>
-        <button><b>FLEXIBILITY AND<br>MOBILITY</b></button>
-        <button><b>SKILL-SPECIFIC<br>DRILLS</b></button>
-        <button><b>ENDURANCE<br>TRAINING</b></button>
-        <button><b>MENTAL<br>CONDITIONING</b></button>
-        <button><b>COOLDOWN<br>STRETCHES</b></button>
+        <button onclick="Str()"><b>GENERAL<br>STRETCHING</b></button>
+        <button onclick="Cardio()"><b>CARDIOVASCULAR<br>CONDITIONING</b></button>
+        <button onclick=""><b>STRENGTH<br>TRAINING</b></button>
+        <button onclick=""><b>AGILITY AND<br>SPEED TRAINING</b></button>
+        <button onclick=""><b>EXPLOSIVE<br>POWER TRAINING</b></button>
+        <button onclick=""><b>FLEXIBILITY AND<br>MOBILITY</b></button>
+        <button onclick=""><b>SKILL-SPECIFIC<br>DRILLS</b></button>
+        <button onclick=""><b>ENDURANCE<br>TRAINING</b></button>
+        <button onclick=""><b>MENTAL<br>CONDITIONING</b></button>
+        <button onclick=""><b>COOLDOWN<br>STRETCHES</b></button>
     </div>
+   <button class="back" onclick="Back()" style="background-color: rgb(50, 50, 50);">Back</button>
+
+    <script src="External.js"></script>
 </body>
 
 </html>
