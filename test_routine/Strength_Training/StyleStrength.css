@@ -42,10 +42,3 @@ a {
     color: inherit;
     text-decoration: none;
   }
-
-/*Buttons for checking workout*/
-button.work{    
-    width: auto;
-    height: auto;
-    color: white;
-}
